@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 19,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "mingw-debug",
+      "description": "MinGW with Debug mode",
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/build-debug",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "E:/Mingw-64/mingw64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "E:/Mingw-64/mingw64/bin/g++.exe",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "mingw-release",
+      "description": "MinGW with Release mode",
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/build-release",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "E:/Mingw-64/mingw64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "E:/Mingw-64/mingw64/bin/g++.exe",
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ]
+
+}
